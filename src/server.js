@@ -7,7 +7,6 @@ const krtek = new Krtek({
 krtek.on('started', () => console.log(`Krtek is running on ${krtek.host}:${krtek.port}`));
 
 krtek.on('configure-js', req => {
-  console.log(req.query.js);
   krtek.jsCode = `
     import React from 'react';
     import {render} from 'react-dom';
@@ -15,9 +14,7 @@ krtek.on('configure-js', req => {
 
     const props = ${req.query.data};
 
-    const DefaultMainComponent = () => (
-      <App.Header>
-
+    const DefaultMainComponent = () => (<App.Header>
         <App.PrimaryHeaderNavigation>
           <App.Masthead />
 
@@ -28,10 +25,8 @@ krtek.on('configure-js', req => {
           </App.PrimaryNavigation>
         </App.PrimaryHeaderNavigation>
 
-      </App.Header>
-    );
-    // const MainComponent = () => (${req.query.js});
-    const MainComponent = () => <DefaultMainComponent />;
+      </App.Header>);
+    const MainComponent = () => ${req.query.js} || <DefaultMainComponent />;
 
     render(<MainComponent />, document.getElementById("${req.query.id}"));
   `;
