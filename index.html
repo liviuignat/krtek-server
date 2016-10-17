@@ -1,0 +1,1515 @@
+<html>
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="https://testtelia.appdirect.com/wicket/resource/com.appdirect.wicket.resources.Resource/spa/themes/telia/styles/generated-styles.min-ver-67E4A4C4D37C9615F340DEE8C98F86FA.css">
+
+    <link rel="stylesheet" type="text/css" href="https://testtelia.appdirect.com/wicket/resource/com.appdirect.wicket.resources.Resource/spa/themes/base/styles/pages/marketplace/styles.min-ver-5D161B020DC6DDEB2D5250533560C111.css">
+
+    <link rel="stylesheet" type="text/css" href="https://testtelia.appdirect.com/wicket/resource/com.appdirect.wicket.resources.Resource/spa/themes/telia/styles/generated-styles.min-blessed1.css?z=1476682399711">
+
+    <style type="text/css">@font-face {
+  font-family: "teliaicon";
+  src: url("https://testtelia.appdirect.com/wicket/resource/com.appdirect.wicket.resources.Resource/spa/themes/telia/fonts/Telia-Icon-Glyphs-woff.woff") format("woff"), url("https://testtelia.appdirect.com/wicket/resource/com.appdirect.wicket.resources.Resource/spa/themes/telia/fonts/Telia-Icon-Glyphs-ttf.ttf") format("truetype");
+}
+
+.companies-dropdown {
+  position: relative;
+  /* Style the companies and manage links dropdown menus */
+}
+
+.companies-dropdown > a {
+  display: block;
+  font-size: 16px;
+  color: inherit;
+  padding: 10px 20px;
+  line-height: 39px;
+  text-decoration: none;
+  -webkit-transition-property: color, background;
+  transition-property: color, background;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.companies-dropdown > a:hover,
+.companies-dropdown > a:focus {
+  background: #652d86;
+  color: white;
+}
+
+.companies-dropdown .adb-context_menu--menu {
+  border: 1px solid #cbcbcb;
+  background-color: white;
+  border-radius: 3px;
+}
+
+/* Style the companies and manage links dropdown menus links */
+
+.companies-dropdown .adb-context_menu--menu a,
+.manage-links a {
+  padding: 10px;
+  color: #575757;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  line-height: 1em;
+  font-size: 14px;
+  /* Style the companies and manage links dropdown menus links hover state */
+}
+
+.companies-dropdown .adb-context_menu--menu a:hover,
+.manage-links a:hover {
+  text-decoration: none;
+  box-shadow: 0 0 0 1px #652d86;
+  position: relative;
+  background-color: #652d86;
+  color: white;
+}
+
+.companies-dropdown li ~ li,
+.manage-links li ~ li {
+  border-top: 1px solid #eaeaea;
+}
+
+/* Show the dropdown containers when the menus are hovered */
+
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu {
+  display: block;
+}
+
+.custom-masthead .custom-masthead-nav {
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  border-bottom: 1px solid #aaaaaa;
+  height: 31px;
+}
+
+.custom-masthead .custom-masthead-nav-item,
+.custom-masthead .custom-masthead-dropdown {
+  display: inline-block;
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 10px;
+  color: #888888;
+  margin-top: 5px;
+  border-left: 1px solid #aaaaaa;
+  line-height: normal;
+}
+
+.custom-masthead .custom-masthead-nav-item:last-child,
+.custom-masthead .custom-masthead-dropdown:last-child {
+  border-left: none;
+}
+
+.custom-masthead .custom-masthead-nav-item .custom-masthead-nav-link,
+.custom-masthead .custom-masthead-dropdown .custom-masthead-nav-link {
+  color: #888888;
+  line-height: normal;
+}
+
+.custom-masthead .adb-context_menu--menu li,
+.custom-masthead .companies-dropdown li {
+  border-top: 1px solid #eaeaea;
+}
+
+.custom-masthead .adb-context_menu--menu a,
+.custom-masthead .companies-dropdown a {
+  position: relative;
+  padding: 10px;
+  padding-right: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: inherit;
+  display: block;
+  line-height: 1em;
+}
+
+.custom-masthead .adb-context_menu--menu a:hover,
+.custom-masthead .companies-dropdown a:hover {
+  color: #fff;
+  box-shadow: 0 0 0 1px #4e256b;
+  background-color: #652d86;
+  text-decoration: none;
+}
+
+.custom-masthead .custom-masthead-dropdown {
+  line-height: normal;
+}
+
+.custom-masthead .custom-masthead-dropdown:empty {
+  display: none;
+}
+
+.custom-masthead .custom-masthead-dropdown .adb-button {
+  border-left: none;
+  border: none;
+  text-shadow: none;
+  box-shadow: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+.custom-masthead .custom-masthead-dropdown .adb-button:hover {
+  color: initial;
+  box-shadow: none;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.custom-masthead .custom-masthead-dropdown .adb-button:after {
+  text-decoration: none;
+}
+
+.custom-masthead .custom-masthead-dropdown a {
+  color: #888888;
+  line-height: normal;
+}
+
+.custom-masthead .custom-masthead-dropdown .adb-link__nav:hover {
+  color: #fff;
+}
+
+.custom-masthead .custom-masthead-nav-item__left {
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  padding: 8px 10px;
+  margin-top: 0;
+}
+
+.custom-masthead .custom-masthead-nav-item__left .custom-masthead-nav-link {
+  color: #652d86;
+}
+
+.custom-masthead .custom-masthead-nav-item--active.custom-masthead-nav-item__left {
+  border-left: 1px solid #aaaaaa;
+  border-right: 1px solid #aaaaaa;
+  border-bottom: 1px solid #fff;
+}
+
+.custom-masthead .custom-masthead-nav-item--active.custom-masthead-nav-item__left .custom-masthead-nav-link {
+  color: #333;
+}
+
+.custom-masthead .custom-masthead-nav-item--active.custom-masthead-nav-item__left .custom-masthead-nav-link:hover {
+  text-decoration: none;
+}
+
+.custom-masthead .custom-masthead-nav-item__right {
+  float: right;
+}
+
+.custom-primary li:empty {
+  display: none;
+}
+
+.custom-primary .custom-primary-nav {
+  background: transparent;
+  border: none;
+  text-shadow: none;
+  box-shadow: none;
+  height: 75px;
+  padding-top: 15px;
+}
+
+.custom-primary .custom-primary-nav-items {
+  position: relative;
+  padding-left: 130px;
+  background-image: url("https://testtelia.appdirect.com/wicket/resource/com.appdirect.wicket.resources.Resource/spa/themes/telia/images/telia.png");
+  background-position: 0 9px;
+  background-repeat: no-repeat;
+  background-size: 104px 39px;
+}
+
+.custom-primary .custom-primary-nav-items .custom-logo-link {
+  display: block;
+  position: absolute;
+  height: 50px;
+  width: 105px;
+  left: 0;
+  background: transparent;
+  opacity: 0;
+}
+
+.custom-primary .custom-primary-nav-item,
+.custom-primary li {
+  border: 0;
+  height: 59px;
+  display: inline-block;
+}
+
+.custom-primary .custom-primary-nav-item .custom-primary-nav-link,
+.custom-primary .custom-primary-nav-item a,
+.custom-primary li .custom-primary-nav-link,
+.custom-primary li a {
+  color: #652d86;
+  display: block;
+  line-height: 40px;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 10px 12px;
+}
+
+.custom-primary .custom-primary-nav-item .custom-primary-nav-link:hover,
+.custom-primary .custom-primary-nav-item a:hover,
+.custom-primary li .custom-primary-nav-link:hover,
+.custom-primary li a:hover {
+  color: #652d86;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 736px) {
+  .custom-primary .custom-primary-nav-item .custom-primary-nav-link,
+  .custom-primary .custom-primary-nav-item a,
+  .custom-primary li .custom-primary-nav-link,
+  .custom-primary li a {
+    padding: 10px 12px;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .custom-primary .custom-primary-nav-item:nth-child(1) {
+    padding: 0;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .custom-primary .custom-primary-nav-items {
+    background-image: url("https://testtelia.appdirect.com/wicket/resource/com.appdirect.wicket.resources.Resource/spa/themes/telia/images/retina-telia.png");
+  }
+}
+
+.adb-secondary_nav {
+  border-bottom: 1px solid #c3b4cd;
+}
+
+.adb-secondary_nav .adb-search_field--button {
+  background: #652d86;
+  box-shadow: none;
+  border: 1px solid #652d86;
+  color: #fff;
+  text-shadow: none;
+  font-weight: 600;
+}
+
+.adb-secondary_nav .adb-search_field--input {
+  border: 1px solid #c3b4cd;
+}
+
+.adb-secondary_nav .adb-secondary_nav--item .adb-secondary_nav--link,
+.adb-secondary_nav .adb-secondary_nav--item a,
+.adb-secondary_nav li .adb-secondary_nav--link,
+.adb-secondary_nav li a {
+  color: #c3b4cd;
+}
+
+.adb-secondary_nav .adb-secondary_nav--item .adb-secondary_nav--link.adb-is-selected,
+.adb-secondary_nav .adb-secondary_nav--item a.adb-is-selected,
+.adb-secondary_nav li .adb-secondary_nav--link.adb-is-selected,
+.adb-secondary_nav li a.adb-is-selected {
+  color: #652d86;
+}
+
+.adb-secondary_nav .adb-secondary_nav--item .adb-secondary_nav--link.adb-is-selected:before,
+.adb-secondary_nav .adb-secondary_nav--item a.adb-is-selected:before,
+.adb-secondary_nav li .adb-secondary_nav--link.adb-is-selected:before,
+.adb-secondary_nav li a.adb-is-selected:before {
+  background-color: #652d86;
+}
+
+#header {
+  min-height: 148px;
+}
+
+#header li:empty {
+  display: none;
+}
+
+#footer {
+  padding-bottom: 0;
+}
+
+#footer .custom-footer {
+  padding: 35px 0 20px 0;
+  background: #652d86;
+  line-height: 17px;
+  min-width: 960px;
+  width: 100%;
+  margin-top: 50px;
+  box-shadow: none;
+  border: 0;
+  position: inherit;
+}
+
+#footer .custom-footer a {
+  color: #fff;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  border: none;
+  margin: 0;
+}
+
+#footer .custom-footer a:hover {
+  text-decoration: underline;
+}
+
+#footer .custom-footer ul {
+  list-style: none;
+}
+
+#footer .custom-footer .custom-footer-nav-items {
+  float: right;
+}
+
+#footer .custom-footer .custom-footer-nav-items > li {
+  border-bottom: 1px solid #78359f;
+  overflow: hidden;
+}
+
+#footer .custom-footer .custom-footer-nav-items > li:last-child {
+  border-bottom-width: 3px;
+}
+
+#footer .custom-footer .custom-footer-nav-item-heading {
+  float: left;
+  padding: 14px;
+  font-size: 16px;
+}
+
+#footer .custom-footer .custom-footer-sub-nav-items {
+  float: right;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#footer .custom-footer .custom-footer-sub-nav-items > li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+}
+
+#footer .custom-footer .custom-footer-sub-nav-items > li a {
+  display: block;
+  padding: 12px 10px;
+}
+
+#footer .custom-footer .custom-footer-social-nav-items {
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+}
+
+#footer .custom-footer .custom-footer-social-nav-items > li {
+  padding: 15px 0;
+  margin: 0 25px;
+  display: inline-block;
+}
+
+#footer .custom-footer .custom-footer-social-nav-items a {
+  display: block;
+  color: #b568e5;
+  padding: 12px;
+  font-weight: bold;
+}
+
+#footer .custom-footer .custom-footer-social-nav-items a:hover {
+  color: #fff;
+}
+
+#footer .custom-footer .custom-footer-copyright {
+  border-top: 1px solid #78359f;
+  text-align: center;
+  color: #b568e5;
+  font-size: 12px;
+  clear: both;
+  padding-top: 10px;
+}
+
+@font-face {
+  font-family: teliaicon;
+  src: url("../fonts/Telia-Icon-Glyphs-woff.woff") format("woff"), url("../fonts/Telia-Icon-Glyphs-ttf.ttf") format("truetype");
+}
+
+/* TEXT */
+
+body,
+textarea,
+input[type="text"] {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.mac .buttonResponse,
+.mac #compare .cell-1 button,
+.gecko .buttonResponse,
+.gecko #compare .cell-1 button {
+  font-family: inherit;
+}
+
+/* Gradient */
+
+/* Borders related to Gradient */
+
+.wicket-modal .modal .w_caption {
+  border-bottom: 1px solid #56356b;
+}
+
+/* Mid Color */
+
+.featuredCarousel li.active a {
+  border-color: #6c4286;
+}
+
+#content {
+  background: #fff;
+}
+
+#preloadedProfile {
+  top: 149px;
+}
+
+/* ---------------------------------------------------
+  Custom
+------------------------------------------------------ */
+
+#main {
+  padding-top: 15px;
+  min-width: 984px;
+}
+
+.accountSetupPage #activatePage {
+  margin-bottom: 20px;
+}
+
+.accountSetupPage #activatePage .buttons button.nextStep {
+  border-color: #707474;
+}
+
+.accountSetupPage #main {
+  padding-top: 10px;
+}
+
+.savePanel button.huge {
+  padding: 10px 20px;
+}
+
+button.huge.buyNow {
+  border: none;
+  padding: 0 9px;
+  margin-right: 5px;
+  font-size: 17px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+button.huge.buyNow.buyButtonText span {
+  color: #000;
+}
+
+button.huge.buyNow:hover {
+  background-position: 0 -50px;
+}
+
+button.huge.buyNow:active {
+  background-position: 0 -100px;
+}
+
+button.huge.buyNow span {
+  display: block;
+  padding: 5px 9px 0 9px;
+  height: 25px;
+  padding-top: 7px\9;
+  padding-bottom: 7px\9;
+  height: 16px\9;
+  background: transparent no-repeat right top;
+  color: #FFF;
+}
+
+.ie9 button:not(.adb-button):not(.adb-button__small):not(.huge):not(.neutral):not(.tableToggle):not(.delete) span {
+  background-color: #6c4286;
+}
+
+.ie9 button.huge,
+.ie9 .featuredCell .featureButtons button.huge,
+.ie9 .adb-button.adb-button__primary {
+  padding: 0;
+}
+
+.ie9 .adb-button.adb-button__small > span,
+.ie9 .adb-search_field--button > span {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.edition-buy-button button.neutral:not([disabled]) {
+  padding: 0 0 0 7px;
+  margin-right: 5px;
+  font-size: 13px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+}
+
+.edition-buy-button button.neutral:not([disabled]) span {
+  display: block;
+  padding: 4px 7px 0 0;
+  height: 20px;
+  padding-top: 3px\9;
+  padding-bottom: 3px\9;
+  height: 18px\9;
+  background: transparent no-repeat right top;
+  color: #fff;
+  font-style: normal;
+}
+
+.buy-button a ~ .mosi-upgrade-container {
+  margin-top: 8px;
+}
+
+button.neutral.tourLink:not([disabled]) {
+  padding: 0 0 0 7px;
+  margin-right: 5px;
+  font-size: 13px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+}
+
+button.neutral.tourLink:not([disabled]) span {
+  display: block;
+  padding: 4px 7px 0 0;
+  height: 20px;
+  padding-top: 3px\9;
+  padding-bottom: 3px\9;
+  height: 18px\9;
+  background: transparent no-repeat right top;
+  color: #fff;
+  font-style: normal;
+}
+
+button.neutral.demoLink:not([disabled]) {
+  padding: 0 0 0 7px;
+  margin-right: 5px;
+  font-size: 13px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+}
+
+button.neutral.demoLink:not([disabled]) span {
+  display: block;
+  padding: 4px 7px 0 0;
+  height: 20px;
+  padding-top: 3px\9;
+  padding-bottom: 3px\9;
+  height: 18px\9;
+  background: transparent no-repeat right top;
+  color: #fff;
+  font-style: normal;
+}
+
+button.neutral.buyNow:not([disabled]) {
+  padding: 0 0 0 7px;
+  margin-right: 5px;
+  font-size: 13px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+}
+
+button.neutral.buyNow:not([disabled]) span {
+  display: block;
+  padding: 4px 7px 0 0;
+  height: 20px;
+  padding-top: 3px\9;
+  padding-bottom: 3px\9;
+  height: 18px\9;
+  background: transparent no-repeat right top;
+  color: #fff;
+  font-style: normal;
+}
+
+button.neutral {
+  text-shadow: none;
+}
+
+button.neutral:not([disabled]).buyNow.buyButtonText span {
+  color: #000;
+}
+
+button.neutral:not([disabled]):hover {
+  background-position: 0 -44px;
+}
+
+button.neutral:not([disabled]):active {
+  background-position: 0 -88px;
+}
+
+#bottomButtons button {
+  margin: 0;
+}
+
+#bottomButtons .neutral {
+  margin-top: 4px;
+}
+
+#bottomButtons #overviewActions {
+  min-height: initial;
+}
+
+#bottomButtons #overviewActions.actionButtons .orText {
+  line-height: 30px;
+}
+
+#activatePage button.nextStep {
+  float: none;
+}
+
+.featuredCell .featureButtons button.huge {
+  padding: 0;
+}
+
+.pricing-panel .editionList ul {
+  text-transform: none;
+}
+
+.sv_SE .manage-button {
+  font-size: 16px;
+}
+
+.purchase-content {
+  padding-top: 30px;
+}
+
+.purchase-content .discountForm .priceColumn {
+  width: auto;
+}
+
+.purchase-content .form-row .form-field {
+  width: auto;
+}
+
+.purchase-content .form-row--product-settings .form-field {
+  width: 100%;
+}
+
+.purchase-content .form-row--product-settings input[type=text] {
+  max-width: 240px;
+}
+
+.purchase-content .form-row--product-settings label {
+  width: 240px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* ---------------------------------------------------
+  Header
+------------------------------------------------------ */
+
+.offsetHidden {
+  display: none;
+}
+
+.logo {
+  background-image: url("https://testtelia.appdirect.com/wicket/resource/com.appdirect.wicket.resources.Resource/spa/themes/telia/images/telia.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 95px 35px;
+  font-size: 22px;
+  width: 140px;
+  height: 50px;
+  margin-top: 26px;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+#login-header .logo,
+#header .logged_in_header .logo {
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+}
+
+#login-header .logo p,
+#header .logged_in_header .logo p {
+  padding-top: 1.5em;
+  margin-left: 52px;
+  font-style: italic;
+  font-weight: 700;
+  color: #6a2c91;
+  font-size: 16px;
+}
+
+#login-header .logo + #main_nav {
+  display: none;
+}
+
+#login-header.stepFlow .logo {
+  display: block;
+  text-indent: 0;
+  margin-left: -10px;
+}
+
+#whiteTeliaLogo {
+  background: image-url("themes/telia/images/telia_white.png") no-repeat scroll 0 0 transparent;
+  width: 75px;
+  height: 30px;
+  float: left;
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 7px;
+}
+
+#sitebar .language-toggle {
+  float: right;
+  font-size: 14px;
+  margin-top: 8px;
+  padding-bottom: 8px;
+  color: #CFC6D5;
+  position: relative;
+}
+
+#sitebar .language-toggle .dropdown {
+  display: none;
+  padding-top: 6px;
+  position: absolute;
+  right: 0;
+  width: 190px;
+  z-index: 500;
+  opacity: 0.94;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=94);
+  filter: alpha(opacity=94);
+}
+
+#sitebar .language-toggle .dropdown ul {
+  background-color: #fff;
+  padding-bottom: 3px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 -1px 0 #acacac;
+}
+
+#sitebar .language-toggle .dropdown li a {
+  display: block;
+  padding: 10px 10px 10px 15px;
+  color: black;
+}
+
+#sitebar .language-toggle:hover .dropdown {
+  display: block;
+}
+
+#sitebar .language-toggle .current-language {
+  margin-right: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#sitebar .language-toggle .arrowDown {
+  float: left;
+  margin-left: 6px;
+  margin-right: 2px;
+  margin-top: 5px;
+}
+
+#header {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+#main_nav,
+#tab_nav,
+#subnav-header {
+  margin: 0 auto;
+}
+
+#main_nav a.active,
+#main_nav li.selected a,
+#main_nav a.selected,
+#tab_nav a.active,
+#tab_nav li.selected a,
+#tab_nav a.selected,
+#subnav-header a.active,
+#subnav-header li.selected a,
+#subnav-header a.selected {
+  font-weight: normal;
+  border-bottom: 3px solid #6c4286;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#main_nav li.selected,
+#tab_nav li.selected,
+#subnav-header li.selected {
+  text-decoration: none;
+}
+
+#main_nav ul,
+#tab_nav ul,
+#subnav-header ul {
+  padding-left: 30px;
+}
+
+#main_nav li a,
+#tab_nav li a,
+#subnav-header li a {
+  color: #6c4286;
+  font-size: 16px;
+  margin: 5px 15px 5px 0;
+  padding: 0 5px;
+  height: 30px;
+  line-height: 27px;
+  display: block;
+}
+
+#main_nav li a.active .navArrow,
+#tab_nav li a.active .navArrow,
+#subnav-header li a.active .navArrow {
+  display: none;
+}
+
+#main_nav li.first:hover a,
+#main_nav li:hover a,
+#tab_nav li.first:hover a,
+#tab_nav li:hover a,
+#subnav-header li.first:hover a,
+#subnav-header li:hover a {
+  padding: 0 10px;
+  margin: 5px 10px 5px -5px;
+  border-bottom: 0;
+  color: #fff;
+  border-radius: 3px;
+  background: #73369e;
+  /* Old browsers */
+  background: -webkit-linear-gradient(top, #73369e 0%, #4e256b 100%, #652d86 100%);
+  background: linear-gradient(to bottom, #73369e 0%, #4e256b 100%, #652d86 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73369e', endColorstr='#652d86',GradientType=0 );
+  /* IE6-8 */
+}
+
+#main_nav li.first a,
+#tab_nav li.first a,
+#subnav-header li.first a {
+  padding-left: 5px;
+  margin-left: 0;
+}
+
+#main_nav strong,
+#tab_nav strong,
+#subnav-header strong {
+  font-weight: normal;
+}
+
+#subnav-header {
+  height: auto;
+}
+
+.homePage #sitebar .actions li {
+  z-index: 340;
+}
+
+#header .logged_in_header .actions .dropdown {
+  opacity: 0.94;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=94);
+  filter: alpha(opacity=94);
+  padding-top: 0;
+}
+
+#header .logged_in_header .actions .dropdown a {
+  color: black;
+}
+
+#usernav .dropdown {
+  top: 20px;
+}
+
+.header_brand {
+  position: relative;
+}
+
+.homePage #header .logged_in_header .header_brand {
+  height: auto;
+}
+
+#myAppsWelcome {
+  margin-top: 16px;
+}
+
+#header .logged_in_header .header_nav {
+  height: auto;
+}
+
+#header .logged_in_header #main_nav {
+  display: inline-block;
+  margin-top: 8px;
+  width: auto;
+}
+
+#header .logged_in_header #main_nav li {
+  float: left;
+}
+
+#header .logged_in_header #main_nav a {
+  font-size: 22px;
+}
+
+#login-header .invis {
+  display: none;
+}
+
+#login-header #main_nav {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+#login-header #main_nav li {
+  float: left;
+}
+
+#login-header #main_nav a {
+  color: #652d86;
+  display: block;
+  font-size: 22px;
+  margin-left: 20px;
+  background: image-url("themes/telia/images/header-arrow.png") no-repeat right -36px;
+  padding: 4px 20px 0 11px;
+}
+
+#header .language-toggle {
+  float: right;
+}
+
+#header .language-toggle a {
+  padding: 14px 2px 0 8px;
+  display: block;
+}
+
+.sv_SE .modal-content #login_page .signupModal,
+.sv_SE #login_page.modal-content .signupModal {
+  width: 495px;
+}
+
+.sv_SE .signupPanel {
+  width: 650px;
+}
+
+#activateBenefits .mb5 {
+  line-height: 1.2em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#activateBenefits ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+#activateBenefits h2 {
+  padding-bottom: 5px;
+}
+
+#activateBenefits li {
+  padding-bottom: 7px;
+}
+
+#activateBenefits li p {
+  text-align: left;
+}
+
+.sizeOption {
+  width: auto;
+  padding-right: 6px;
+}
+
+.ie10 .sizeOption .ENTERPRISE.icon,
+.ie10
+  .sizeOption .ENTERPRISEActive.icon {
+  width: 28px;
+}
+
+.listingPage #compareModal #compare .cell-1 button {
+  padding: 5px 10px;
+}
+
+.remember-org-number {
+  width: 260px;
+  font-size: 12px;
+  line-height: 1.2em;
+  margin-top: 2px;
+}
+
+.sv_SE .remember-org-number {
+  width: 220px;
+}
+
+.ie9 .login-form#activatePage .buttons button.nextStep > span {
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#503164', endColorstr='#6c4286',GradientType=0);
+  color: #fff;
+}
+
+.ie9 .login-form#activatePage .buttons button.nextStep:hover > span,
+.ie9 .login-form#activatePage .buttons button.nextStep:active > span {
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#955bb9', endColorstr='#59366e',GradientType=0);
+}
+
+.ie9.accountpages button.addProduct > span {
+  display: inline-block;
+}
+
+.ie9 button.addProduct span.hIcon {
+  margin-top: 3px;
+  padding-bottom: 3px;
+  display: inline-block;
+}
+
+.tableFilters .filter.time {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tableFilters .filter.time .timeInput,
+.tableFilters .filter.time label {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  float: none;
+}
+
+.tableFilters .filter.time label.toLabel {
+  padding-left: 0;
+}
+
+.ie8 .tableFilters .filter.time label.toLabel {
+  padding-left: 8px;
+}
+
+.tableFilters .filter.time .yui-skin-sam {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+/* ---------------------------------------------------
+  App Detail pages
+------------------------------------------------------ */
+
+#tab_nav li .discount {
+  margin-top: 6px;
+}
+
+.main-app-part {
+  margin-bottom: 20px;
+}
+
+/*----------------------------------------------------
+  Account
+------------------------------------------------------ */
+
+.price-small-total {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 11px;
+}
+
+tr td.price-small-total {
+  padding-right: 0;
+  padding-left: 0;
+  width: 60px;
+}
+
+tr td.price-small-total span {
+  white-space: nowrap;
+}
+
+@media not pdf {
+  #main_nav li.first:hover a,
+  #main_nav li:hover a,
+  #tab_nav li.first:hover a,
+  #tab_nav li:hover a,
+  .popo li.first:hover a,
+  .popo li:hover a,
+  #subnav-header li.first:hover a,
+  #subnav-header li:hover a {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzczMzY5ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ZTI1NmIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNjUyZDg2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==");
+  }
+}
+
+.companyPage .editContent .business-size .size-list-option-label {
+  font-weight: normal;
+  font-size: 12px;
+  text-align: left;
+  line-height: 15px;
+  width: auto;
+}
+
+.companyPage .editContent .business-size .size-list-option-label span {
+  padding-left: 2px;
+  line-height: 16px;
+  vertical-align: middle;
+}
+
+.ie.companyPage .editContent .business-size .form-field {
+  margin-top: -1px;
+}
+
+.ie.companyPage .editContent .business-size .size-list-option-label {
+  padding-top: 0;
+}
+
+.ie.companyPage .editContent .business-size .size-list-option-label span {
+  padding-left: 0;
+}
+
+.ie10.companyPage .editContent .business-size input[type=radio],
+.ie9.companyPage .editContent .business-size input[type=radio] {
+  margin-top: -1px;
+}
+
+#invoices .tableFilters .filter.time,
+#payments .tableFilters .filter.time {
+  width: 340px;
+}
+
+.modal-content .invoiceHeader,
+body.pdf .invoiceHeader {
+  display: none;
+  background-color: #8853a8;
+  border-bottom: 1px solid #4e256b;
+  padding: 15px 40px;
+  color: white;
+  font-size: 16px;
+}
+
+.modal-content .invoiceIDBox,
+body.pdf .invoiceIDBox {
+  overflow: hidden;
+  line-height: 22px;
+}
+
+.modal-content .invoiceIDBox h3.titleName,
+body.pdf .invoiceIDBox h3.titleName {
+  font-size: 18px;
+}
+
+.modal-content .invoice-table,
+body.pdf .invoice-table {
+  overflow: hidden;
+}
+
+.modal-content .invoice-table .invoice-item,
+body.pdf .invoice-table .invoice-item {
+  padding: 2px 0;
+}
+
+.modal-content .invoiceID,
+body.pdf .invoiceID {
+  float: left;
+  font-size: 18px;
+  font-weight: normal;
+  padding-left: 8px;
+}
+
+.modal-content #whiteTeliaLogo,
+body.pdf #whiteTeliaLogo {
+  float: right;
+  margin-top: -17px;
+  z-index: 1000;
+  margin-right: 0;
+}
+
+#bundleTop .bundleBuy.grid_3 {
+  width: 250px;
+  margin-right: 0;
+}
+
+.percentaged .discountPrice {
+  width: 74px;
+}
+
+#paymentsTable .table-container {
+  overflow-x: scroll;
+}
+
+#sitebar {
+  border-bottom: 1px solid #ebebeb;
+}
+
+#sitebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#sitebar ul > li {
+  display: inline-block;
+  line-height: 20px;
+}
+
+#sitebar .sitenav {
+  float: left;
+}
+
+#sitebar .sitenav > li a {
+  display: block;
+  padding: 6.5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  position: relative;
+  top: 1px;
+}
+
+#sitebar .sitenav > li a:hover {
+  text-decoration: underline;
+}
+
+#sitebar .sitenav > li.current {
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+
+#sitebar .sitenav > li.current a {
+  color: #000;
+  background-color: #fff;
+}
+
+#usernav {
+  float: right;
+  font-size: 10px;
+  color: gray;
+}
+
+#usernav > li {
+  border-right: 1px #bfbfbf solid;
+  padding: 0 5px;
+  margin: 6.5px 0;
+}
+
+#usernav > li:last-child {
+  border: 0;
+}
+
+#usernav > li a {
+  position: relative;
+  top: 1px;
+  color: gray;
+}
+
+#usernav .account {
+  position: relative;
+  top: 1px;
+}
+
+#usernav .account .arrowDown {
+  margin-top: 9px;
+}
+
+.headernav {
+  padding-top: 30px;
+}
+
+.headernav > li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+.headernav > li.current a,
+.accountpages .headernav > li.account-item a,
+.marketplace .headernav > li.appmarket-item a,
+.myappsV2Page .headernav > li.myapps-item a {
+  border-bottom: 2px solid #652d86;
+}
+
+.headernav > li a {
+  color: #652d86;
+}
+
+@media all and (max-width: 1280px) {
+  .headernav {
+    max-width: 680px;
+  }
+}
+
+#headerSearch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 27px;
+  margin-right: 5px;
+}
+
+#headerSearch #applicationSearchButton,
+#headerSearch input {
+  position: relative;
+  display: inline-block;
+  right: auto;
+}
+
+#headerSearch input {
+  background-color: #fafafa;
+  height: 37px;
+  min-width: 200px;
+  font-size: 17px;
+  border: 1px solid #c3b4cd;
+  color: #000;
+  padding: 6px 40px 6px 10px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#headerSearch #applicationSearchButton {
+  background: #c3b4cd;
+  height: 37px;
+  width: 42px;
+  font-size: 24px;
+  line-height: 38px;
+  border: 0;
+  border-radius: 0;
+  top: 0;
+  right: 0;
+  font-family: teliaicon;
+}
+
+#headerSearch #applicationSearchButton::before {
+  content: "\e013";
+}
+
+.pricingItem.addtionalPrices {
+  display: none;
+}
+
+.pricingItemTelia {
+  display: none;
+}
+
+.pricingTelia .price.original {
+  padding-left: 20px;
+}
+
+.pricing-panel .price.discount {
+  width: 100%;
+}
+
+.assignPanel p.fullMessage {
+  font-size: 12px;
+}
+
+/* Custom Layout Fixes */
+
+#main > .wrapper {
+  padding: 0 0 0 0;
+}
+
+#appOverview {
+  padding: 20px 10px 10px 10px;
+}
+
+#sitebar .wrapper {
+  width: 1100px;
+}
+
+.information-circle {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: image-url("themes/telia/images/info-circle.png") no-repeat;
+  background-position: 0 0;
+  margin-left: 25px;
+}
+
+.accountSetupPage .login-form .form-row.terms-panel-container .checkbox-item label {
+  float: left;
+  width: auto;
+}
+
+.category-tags {
+  display: none;
+}
+
+#activatePage .activate-section {
+  padding-bottom: 0;
+}
+
+#activatePage.round-white-cont {
+  min-height: 550px;
+}
+
+.hide-required-icon .billing-address-container .tRed {
+  display: none;
+}
+
+.accountSetupPage .login-form .form-row label {
+  width: 182px;
+}
+
+.editionRow .app-name-container {
+  padding-bottom: padding-vertical(xlarge);
+}
+
+.mosi-banner .mosi-email,
+.mosi-banner .mosi-site,
+.mosi-banner .mosi-group {
+  display: none;
+}
+
+.select-purchase .total-line .footnote br + span {
+  display: block;
+  margin-top: 4px;
+}
+
+.bundle-feature-container {
+  text-align: center;
+}
+
+.bundle-feature {
+  display: inline-block;
+}
+
+#manageApps .appStatusInfo .manage-row label {
+  width: 130px;
+}
+
+.grid_4.omega .invoice-item span {
+  text-align: right;
+  max-width: none;
+}</style>
+  </head>
+
+  <body>
+    <div id="mainRegion" class="adb-page">
+    </div>
+
+    <script type='text/javascript' src='http://localhost:3000/bundle?js=<Header title="prop 1"/>&id=mainRegion'></script>
+  </body>
+</html>
